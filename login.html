@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LOGIN</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="login">
+      <section class="banner__section">
+        <img
+          class="banner"
+          src="/images/full-shot-happy-friends-meeting.jpg"
+          alt="login"
+        />
+      </section>
+      <section class="form__section">
+        <form id="login">
+          <h2>Welcome Back to Eventify!</h2>
+          <small class="small">Sign in your account</small>
+          <span class="input">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" required />
+          </span>
+          <span class="input">
+            <label for="password">Password</label>
+            <input
+              class="password"
+              type="password"
+              id="password"
+              name="password"
+              required
+            />
+            <button type="button" class="eye" id="show">
+              <img src="/images/visibility.svg" alt="" />
+            </button>
+          </span>
+          <div class="checkbox__flex">
+            <span>
+              <input type="checkbox" name="remember" id="remember" />
+              <label for="remember">Remember Me</label>
+            </span>
+            <a href="#">Forgot Password?</a>
+          </div>
+
+          <p id="loginError" style="color: red"></p>
+
+          <button class="submit" type="submit">Login</button>
+          <p class="register">
+            Dont have an account? <a href="signup.html">Register</a>
+          </p>
+        </form>
+      </section>
+    </main>
+    <script src="login.js"></script>
+  </body>
+</html>
